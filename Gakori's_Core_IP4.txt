@@ -1,0 +1,68 @@
+﻿1. PROBLEM STATEMENT
+
+
+The data under investigation is the autolib data which is an electric car-sharing service company. Our problem statement is, we are required to investigate a claim about blue cars from the provided dataset. This can be done by identifying some areas and periods of interest, choosing a sample and an appropriate sampling method and performing a hypothesis testing in regards to the claim we have made.
+The random variable of investigation is the day type which is on weekdays.
+The main reason for selecting this variable for investigation is to draw insights on how often blue cars are taken and used during the weekdays by putting into consideration the mean of blue cars taken.
+In hypothesis, we are trying to investigate a claim that the number of blue cars taken on weekdays is greater than the population mean.
+The hypothesis is important because in the plotted graph we observe that the number of  blue cars taken on weekdays are more than weekends. We therefore want to investigate the claim if it is really greater..
+Ha: mu = pop_mean
+H1:mu > pop_mean(claim)
+
+
+
+
+2. DATA DESCRIPTION
+
+
+The data contains different types of electric cars from the autolib car sharing company. It describes the number of cars taken and returned in a particular day, its location, data points, day of the week and the recharging slots. These are the variables contained in our dataset.
+The random variable ‘day_type’ is what we are investigating. If the number of blue cars taken on weekdays are more than the bluecars population means.
+The data was obtained from autolib car sharing company. The dataset and its description can be also found here respectively, http://bit.ly/DSCoreAutolibDataset  [Link].
+From our dataset, we can obtain different measures of spread and central tendency.
+Our population mean  is 49.24 and the population standard deviation is 46.30. These values are obtained by calculating the mean(mu) and the standard deviation(sigma) of the ‘bluecars_taken_sum’. 
+From the calculated mean and standard deviation it is possible that our variable is normally distributed.
+From our dataset, in the ‘day_type’ column, we only select observations that contain weekdays only because this is what we  are interested in. We also select a sample size that will be used when carrying out hypothesis testing. The selected sample size(n) is 100 observations.
+
+
+3. HYPOTHESIS TESTING PROCEDURE
+In this procedure, we will follow the steps carried out during hypothesis testing.
+Firstly, we identify the null and our alternative hypothesis. 
+As mentioned earlier, the day type variable which contains either weekday or weekend, is of importance for testing. In this case, we will put into consideration weekdays as most of the blue cars are used on this type of day. We’ll use this results to test the claim that blucars used on weekdays have a mean greater than pop mean which is 49.24
+Our null and alternative hypothesis therefore is:
+Ha:mu=49.24
+H1:mu>49.24(claim)
+Test statistic. The  test statistic used in this case will be a ztest. This is because from our dataset we can find the population mean(mu) and the population standard deviation(sigma).
+The sample size is also greater than 30. We can therefore derive the z formula from this as:
+Z Test = (x̄ – μ) / (σ / √n) where x̄ is the avg of the sample,  μ is the avg of the population, σ is the population standard deviation and n is the sample size. This is also an upper tailed distribution as our alternative hypothesis is greater than the mean.
+p value. The p value is obtained from the z test statistic. We will use this to make our final conclusion of whether to reject or accept the null hypothesis by comparing the p value and the significance level. This can also be done by finding the critical value at a 0.05 level of significance in the upper tailed z test table. If our test statistic falls in the rejection region of the critical value we reject the null hypothesis and vice versa.
+The significance level to be used is 0.05
+Finally we make a conclusion in the context of the claim.
+
+
+
+
+4. HYPOTHESIS TESTING RESULTS
+
+
+The results are as follows:
+        Alpha = 0.05
+        Test statistics = 0.045
+        P value = 0.52
+        Confidence interval = 95%  between 48.07 and 67.37
+From the above results we can make the following conclusions:
+        the p value(0.52) being greater than the significance level(0.05), we therefore fail to reject the null hypothesis. We conclude that there is no sufficient evidence to support a conclusion that the population means is greater than 49.24
+Point estimate is -2.12
+From the calculated 95% confidence interval, we are 95% confident that the mean is between 41.71% and 61.01%.
+
+
+5. DISCUSSIONS AND TEST SENSITIVITY
+
+
+Power of the test. Type ii error can occur from the results i.e. failing to reject the null hypothesis when it is actually false.
+At the significance level of 0.05, we can use 0.80 as the power of the test as it is a common way of determining if the hypothesis test is effective.
+When we increase the sample size n, there will be a decrease in beta and the typeII error can be controlled.
+
+
+6. SUMMARY AND CONCLUSIONS
+The project analysis involved univariate, bivariate analysis, sampling and hypothesis testing.
+In summary, from our test, we fail to reject the null hypothesis as there is no sufficient evidence to conclude that the population mean is greater than 49.24

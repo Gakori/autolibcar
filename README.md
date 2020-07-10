@@ -5,7 +5,7 @@
  * Built By Faith Gakori
 
 ## PROJECT DESCRIPTION
-    the project uses hypothesis testing to detrmine whether to reject or fail to reject the null hypothesis. EDA is also conducted to anlyse our data
+  * the project uses hypothesis testing to detrmine whether to reject or fail to reject the null hypothesis. EDA is also conducted to anlyse our data
 
 ## SetUp / Installation Requirements
   Clone the repo by running:
